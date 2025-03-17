@@ -1,7 +1,12 @@
-<html> <!-- html code should begin/all be nested w/i html element/tag ... sometimes will be doctype 1st/html5 or whatever -->
+<!DOCTYPE html> <!-- doctype declaration defines the document type and version of HTML. -->
+
+<html lang="en"> <!-- html code should begin/all be nested w/i html element/tag ... sometimes will be doctype 1st/html5 or whatever -->
+  <head>
+    <title> FCC HTML </title>
+  </head>
   <body>
     <main>
-      <h1>&lt;h1&gt; is Largest Headline</h1>
+        <h1>&lt;h1&gt; is Largest Headline</h1>
       <section> <!-- break content into sections -->
       <!--  
       The section element represents a generic section of a document or application. 
@@ -30,20 +35,126 @@
           <li>section</li>
           <li>nested headline</li>
           <li>paragraph & unordered list also nested inside section</li>
+            <ol>
+              <li>ordered list &lt;ol&gt; nested within unordered list</li>
+              <li>lists can be placed within lists</li>
+            </ol>
         </ul>
-        <ol>
-          <li>ordered list &lt;ol&gt; nested within unordered list</li>
-          <li>lists can be placed within lists</li>
-        </ol>
+        <p>&lt;figure&gt; is usually used with a caption.  its another subsystem of HTML code i reckon.</p>
         <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
-          <figcaption>Cats <em>love</em> lasagna.</figcaption> 
+          <a href="https://zapier.com/blog/learn-html-css/" target="_blank"><img src="https://images.ctfassets.net/lzny33ho1g45/learn-html-css-p-img/12978ef50623cf76538cfe18e1011fc5/file.png?w=1520&fm=avif&q=31&fit=thumb&h=760" alt="a website about websites about hacking."></a>
+          <a href="https://zapier.com/blog/learn-html-css/" target="_blank"><figcaption>insert caption here. and both the image/figure & the caption are links to same place. because we can</figcaption></a>
+        </figure>
+      </section>
+      <section>
+        <h2>Web Forms:</h2>
+        <h3>collect information from users;</h3>
+        <form action="https://github.com/sir-papi/march102025"> <!-- action attribute specifies where to send the form-data when a form is submitted. -->
+          <!-- autmoatic form code filled ... -->
+          <label for="fname">First Name:</label><br>
+          <input type="text" id="fname" name="fname" placeholder="John">
+          <!-- The input element represents a typed data field, usually with a form control to allow the user to edit the data. -->
+          <!-- various types depending on form input goal: email pw names locations phone# -->
+          <!-- name is input attributes value that allows form attribute actions value to access info -->
+          <!-- placeholder: what is in submission box as an example for what user should enter --> 
+          <button>Submit</button><br>
+            <!-- ??? button element is a block-level element, which means it starts on a new line and takes up the full width available. -->
+            <!-- BUT DOES IT THO ?? -->
+            <!-- ?? both input & button elements are inline & don't appear on new lines hence <br> --> 
+            <!-- button is next to fname input because no <br> but on a new line after email input because <br> --> 
+          <label for="lname">Last Name:</label><br>   
+          <input type="text" id="lname" name="lname" placeholder="Doe"><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="?"  required><br>
+          <!-- required attribute: specifies that an input field must be filled out before submitting the form. -->
+          <button type="submit">Submit</button>   
+            <!-- button element defines a clickable button. -->
+            <!-- button element can be used to submit a form, or anywhere in a document for clickable buttons. -->
+            <!-- button element is a container for phrasing content, which means it can contain text, images, or other HTML elements. -->
+            <!-- button element can be used with the type attribute to specify the button's behavior. -->
+            <!-- type="submit" specifies that the button is a submit button. avoids "default" confusion -->
+            <!-- type="reset" specifies that the button is a reset button. -->
+            <!-- type="button" specifies that the button is a generic button. -->
+            <!-- button element can be used with the formaction attribute to specify the URL of the page to submit the form to. -->
+            <!-- formaction attribute overrides the form's action attribute. -->
+          <fieldset> <!-- fieldset element is used to group related elements in a form. -->
+            <legend>Is your chick an indoor or outdoor girl?</legend>
+            <!-- notice how the legend element captions the fieldset element. -->
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor" checked> Outdoor</label> 
+            <!-- radio button: input type="radio" -->
+            <!-- radio button allows users to select one option from a set. -->
+            <!-- for multiple radio buttons (inline): Notice that both radio buttons can be selected at the same time. To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value. -->
+            <!-- name attribute groups radio buttons together. -->
+            <!-- value attribute specifies the value to be sent to the server when the form is submitted. -->
+            <!-- id attribute is used to identify the radio button. -->
+          </fieldset>
+          <fieldset>
+            <legend>What type time is she on?</legend>
+            <input id="loving" type="checkbox" name="personality" checked><label for="loving">Loving</label>
+            <input id="jealous" type="checkbox" name="personality"><label for="jealous">Jealous</label>
+            <input id="playful" type="checkbox"> Playful
+            <input id="protective" type="checkbox"> Protective
+            <input id="loyal" type="checkbox"> Loyal<br>
+            <input id="obedient" type="checkbox"> Obedient
+            <input id="smart" type="checkbox"> Smart
+            <input id="funny" type="checkbox"> Funny
+            <input id="silly" type="checkbox"> Silly
+            <input id="shy" type="checkbox"> Shy<br>
+            <input id="friendly" type="checkbox"> Friendly<br>
+            <input id="energetic" type="checkbox"> Energetic<br>
+            <input id="lazy" type="checkbox"> Lazy<br>
+            <input id="independent" type="checkbox"> Independent<br>
+            <input id="affectionate" type="checkbox"> Affectionate<br>
+            <input id="curious" type="checkbox"> Curious<br>
+            <!-- damn they wasnt playing wit the attributes-->
+          </fieldset>
+          <label for="language">Language:</label><br>
+          <select id="language" name="language">
+            <option value="english">English</option>
+            <option value="spanish">Spanish</option>
+            <option value="arabic">Arabic</option>
+            <option value="french">French</option>
+          <!-- select element creates a drop-down list. -->
+          <!-- option element defines an option that can be selected. -->
+          </select><br>
+          <label for="comment">Comment:</label><br>
+          <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comment here."></textarea><br>
+          <!-- textarea element defines a multi-line text input control. -->
+          <!-- rows attribute specifies the visible number of lines in a text area. -->
+          <!-- cols attribute specifies the visible width of a text area. -->
+          <input type="submit" value="Submit"> <!-- submit button -->
+          <!-- input element specifies an input field where the user can enter data. -->
+          <!-- type="submit" specifies that the button is a submit button. -->
+          <!-- value attribute specifies the text that is displayed on the button. -->
+          <input type="reset" value="Reset"> <!-- reset button -->
+          <!-- input type="reset" specifies that the button is a reset button. -->
+          <!-- value attribute specifies the text that is displayed on the button. -->
+          <!-- reset button clears all the input fields in the form. -->
+          <!-- <input type="radio" name ?? <input type="checkbox" name -->
+          <p>*note the submit buttons</p>
+        </form>
+      </section> 
+    </main>
+    <footer>&copy; 2025 stop playin im that guy</footer>
+    <p>(semi) courtesy of <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp.org</a></p>
+    <!-- footer element represents the footer of a section or page. and follows <main> -->
+      
+        
+     
 
-    <p>
+    
+    
+    
+    
+    
+    <!-- 
+        <p>
         <sup>1</sup> &lt;a&gt;: Contains a URL or a URL fragment that the hyperlink points to. 
         A URL fragment is a name preceded by a hash mark (#), which specifies an internal target location (an id of an HTML element) within the current document. 
         URLs are not restricted to Web (HTTP)-based documents, but can use any protocol supported by the browser. 
         For example, file:, ftp:, and mailto: work in most browsers.
         Note: You can use href="#top" or the empty fragment href="#" to link to the top of the current page. This behavior is specified by HTML5.
-    </p>
+        </p>
+    -->
     <a href="#">top</a>
