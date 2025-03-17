@@ -1,0 +1,71 @@
+h1, h2, p { text-align: center; }
+
+/* insert comment here */
+body {
+    background-image: url(https://images.wallpapersden.com/image/download/programming-coding-language_bGhpbm6UmZqaraWkpJRmbmdlrWZlbWU.jpg);
+    font-family: sans-serif;
+    padding: 20px;
+  }
+
+img { display: block; margin-left: auto; margin-right: auto; }
+
+h1, h2   {  font-family: Impact, serif;  }
+
+h1 { font-size: 40px; margin-top: 0; margin-bottom: 15px; }
+  
+h2 { font-size: 30px; }
+    
+hr {
+    height: 1px;
+    background-color: red;
+    border-color: red;
+  }
+
+.established { font-style: italic; }
+
+.gameplan {
+    width: 80%; 
+    background-color: goldenrod;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px; 
+}
+
+.flavor, .dessert { text-align: left; width: 75%; }
+
+.price { text-align: right; width: 25%; }
+
+.item p { 
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px; 
+}
+
+.bottom-line { margin-top: 25px; }
+
+  /* FOOTER */
+footer { font-size: 14px;m}
+
+a { color: black; }
+
+a:visited { color: black; }
+a:hover { color: red; }
+a:active { color: gold; }
+
+.address { margin-bottom: 5px; }
+
+/* .class is a class selector */
+/* #id is an id selector */
+/* element is an element selector */
+/* .class, #id, element { */
+/*   property: value; */
+/* } */
+/* the benefit of the difference betw een classes and ids is that you can reuse classes but not ids */
+/* id in html was changed to class=gameplan when # was changed to . */
+/* https://www.shutterstock.com/shutterstock/videos/1015145509/preview/stock-footage-glitch-green-sistem-hack.webm */
+/* https://media.istockphoto.com/id/1683913776/photo/html-css-coding-screen-technology-background-of-coding-screen.jpg?s=2048x2048&w=is&k=20&c=-cW4-S_IVb1SN3WrjEn5FPzrObaOQouR3gPWdDkIP0w= */
+/* https://wallpapers.com/images/high/hacker-collage-cryptic-message-5lu6chkh1n1ujabw.webp */
+/* https://images.wallpapersden.com/image/download/programming-coding-language_bGhpbm6UmZqaraWkpJRmbmdlrWZlbWU.jpg */
+https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29kaW5nfGVufDB8fDB8fHww
