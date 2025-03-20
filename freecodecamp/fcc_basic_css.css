@@ -30,6 +30,7 @@ hr {
     margin-right: auto;
     padding: 20px;
     max-width: 500px; 
+    opacity: 0.9;
 }
 
 .flavor, .dessert { text-align: left; width: 75%; }
