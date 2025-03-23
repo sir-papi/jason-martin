@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title" class="headboard">snowboard (freeCode)Camp</h1>
+            <p id="description" class="headboard">tell us about yourself.</p>
+        </header>
+        <main>
+            <form id="survey-form" action="">
+                <div>
+                    <label for="name" id="name-label">name: 
+                        <input class="widebody" id="name" type="text" placeholder="your name here" required>
+                    </label>
+                    <label for="email" id="email-label">email: 
+                        <input class="widebody" id="email" type="email" placeholder="must be valid address" required>
+                    </label>
+                    <label for="number" id="number-label">age: 
+                        <input class="widebody" id="number" type="number" min="8" max="80" placeholder="(almost) all ages welcome">
+                    </label>
+                </div>
+                <br>
+                <div>
+                    <h2>describe the snowboarder you are today:</h2>
+                    <select name="" id="dropdown" class="selection">
+                        <option disabled selected value>how comfortable are you</option>
+                        <option value="novice">first timer</option>
+                        <option value="beginner">advanced beginner</option>
+                        <option value="competent">competent</option>
+                        <option value="proficient">proficiently skilled</option>
+                        <option value="expert">sebbe de buck | x games ready</option>
+                    </select>
+                </div>
+                <div>
+                    <h2>snowboarding is:</h2>
+                    <label class="radio" for="sport">
+                        <input class="radio-input" type="radio" name="classification" value="sport" id="sport">
+                        <span>a sport</span>
+                    </label>
+                    
+                    <label class="radio" for="culture">
+                        <input class="radio-input" type="radio" name="classification" value="culture" id="culture">
+                        <span>culture</span>
+                    </label>
+                    
+                    <label class="radio" for="spiritual">
+                        <input class="radio-input" type="radio" name="classification" value="spiritual" id="spiritual" checked>
+                        <span>spiritual</span>
+                    </label>
+                    
+                    <label class="radio" for="everything">
+                        <input class="radio-input" type="radio" name="classification" value="everything" id="everything">
+                        <span>all of the above</span>
+                    </label>
+                </div>
+            
+                <div class="goals">
+                    <h2>what would you like to leave camp with?</h2>
+                    <p id="wishes">check as many as you desire...</p>
+                    <label><input type="checkbox" name="exit" value="moguls">moguls</label>
+                    <label><input type="checkbox" name="exit" value="halfpipe">halfpipe</label>
+                    <label><input type="checkbox" name="exit" value="terrain park">terrain park</label>
+                    <label><input type="checkbox" name="exit" value="media - film">media - film</label>
+                    <label><input type="checkbox" name="exit" value="media - podcasting">media - podcasting</label>
+                    <label><input type="checkbox" name="exit" value="jumps + air">jumps + air</label>
+                    <label><input type="checkbox" name="exit" value="backcountry">backcountry</label>
+                </div>
+                <div>
+                    <h2>comments + suggestions:</h2>
+                    <textarea class="inbox" name="comments" id="suggestions" cols="50" rows="5S" placeholder="bring all hopes + fears to the slopes!"></textarea>
+                </div>
+                <input class="submission" type="submit" value="submit">
+            </form>
+        </main>
+    </div>
+</body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title" class="headboard">snowboard (freeCode)Camp</h1>
+            <p id="description" class="headboard">tell us about yourself.</p>
+        </header>
+        <main>
+            <form id="survey-form" action=""><div class="name-email-age"></div>
+                <div class="dropdown-description"></div>
+                <div class="radio-identity"></div>
+                <div class="goals"></div>
+                <div class="inbox"></div>
+                <button></button>
+            </form>
+        </main> 
+    </div>
+</body>
+</html>
+-->
+                
+            
