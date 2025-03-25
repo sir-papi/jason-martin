@@ -1,0 +1,109 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+    <title id="title">KODONExFrank Ocean</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="main">
+        <header>
+            <h1>KODONExFrank Ocean</h1>
+        </header>
+        <div id="img-div">
+            <img src="https://i.redd.it/uw1cqt5udej51.jpg" alt="photo of Frank Ocean in racing helmet" id="image"> 
+             <figcaption id="img-caption">Frank Ocean Blond Rollout</figcaption>
+        </div>
+        <div class="double-tribute">
+            <h2>KODONE x Frank Ocean</h2>
+            <p id="tribute-info">The image above is misleading and fitting atsdt, as it really is not the tributee. <br>
+                We have two artists being "tributed" here. <br>
+                Frank Ocean and Kodone are synonymous in that they are undoubtedly amongst the finest artists of their era.<br>
+                Frank Ocean is a singer, songwriter, and rapper known for his unique musical style and profound lyrics.<br>
+                Kodone is a phenomenal visual artist, inspiration to a generation, with a style all his own.<br>
+                This photo of Frank is the muse for <a href="https://www.instagram.com/p/CxdxvVUP6M5/?hl=en&img_index=1" 
+                id="tribute-link" target="_blank">Kodones reinterpretation.</a>
+            </p>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+** end of undefined **
+
+** start of undefined **
+
+main {
+    width: 1000px;   
+    height: 1100px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header {
+    background-color: hotpink; 
+    text-align: center; 
+    padding-top: 50px; 
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-family: 'Modak', cursive; 
+    font-size: 70px;
+}
+
+img {
+    display: block;
+}
+
+#img-div {
+    background-color: #28156c; 
+    padding-bottom: 20px;
+}
+
+#image {
+    margin-bottom: 5px; block; 
+    max-width: 100%; 
+    height: auto;
+    align-items: center;
+}
+
+#img-caption {
+    margin: 10px auto;
+    color: red;
+    text-align: center;
+    font-family: Verdana
+}
+
+.double-tribute {
+    background-color: #ff6700; 
+    padding: 10px 20px; 
+    margin: none;
+}
+
+h2 {
+    font-family: Tahoma;
+}
+
+#tribute-info {
+    font-family: Verdana;
+}
+
+#tribute-info a {
+    text-decoration: none;
+    color: #30b80b;
+}
+
+#tribute-info a:hover {
+    color: inherit;
+}
+
+
+** end of undefined **
+
