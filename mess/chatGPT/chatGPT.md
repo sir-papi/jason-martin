@@ -468,3 +468,70 @@ footer a {
 - **✅ Works well across screen sizes**
 
 Let me know if you need any modifications! 🚀😊
+---
+To **center your image horizontally**, you have several options depending on how you want to structure your page.  
+
+---
+
+### **Option 1: Using `display: block;` + `margin: auto;` (Best for Single Images)**
+✅ **Best when the image is inside a block-level container** (like `<div>`, `<body>`, etc.).  
+```css
+img {
+    display: block; /* Makes it respect margin: auto */
+    margin: 0 auto; /* Centers it horizontally */
+    width: 50%; /* Optional: Adjust width */
+}
+```
+💡 **This works because `display: block;` allows `margin: auto;` to take effect.**
+
+---
+
+### **Option 2: Using `text-align: center;` (Best for Inline Elements)**
+✅ **Best when the image is inside a centered container (like a `<div>`).**
+```css
+.center-container {
+    text-align: center;
+}
+
+img {
+    width: 50%; /* Optional */
+}
+```
+```html
+<div class="center-container">
+    <img src="tribute.png" alt="Tribute Image">
+</div>
+```
+💡 **This works because `text-align: center;` centers inline elements like `<img>` inside a block container.**
+
+---
+
+### **Option 3: Using Flexbox (Best for Responsive Layouts)**
+✅ **Best if you want a modern & flexible centering approach.**  
+```css
+.flex-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Optional: Centers vertically too */
+    height: 100vh; /* Optional: Full-screen height */
+}
+
+img {
+    max-width: 100%; /* Keeps image responsive */
+}
+```
+```html
+<div class="flex-container">
+    <img src="tribute.png" alt="Tribute Image">
+</div>
+```
+💡 **This is great if you have multiple images or other elements in the container.**
+
+---
+
+### **Which One Should You Use?**
+- **Use Option 1 (`margin: auto;`)** if the image is alone inside a block element.  
+- **Use Option 2 (`text-align: center;`)** if the image is inside a `<div>`.  
+- **Use Option 3 (Flexbox)** for a modern, flexible approach, especially if you want **vertical centering too**.
+
+Would you like me to apply the best method to your code? 😊
