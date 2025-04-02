@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+/* Responsive Background */
+@media (max-width: 600px) {
+    body {
+        background-color: yellow;
+    }   
+}
+
+/* Header & Navigation */
+nav {
+    display: flex;
+    padding: 10px;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+/* Content Box */
+.content {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* Button Styles */
+form button {
+    color: red;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Centered Animation Box */
+.container {
+    position: relative;
+    width: 500px;
+    height: 100px;
+    margin: 50px auto;
+    background-color: lightgray;
+}
+
+/* Animated Box */
+.cabin {
+    height: 25px;
+    width: 25px;
+    border: 3px solid salmon;
+    position: absolute;
+    left: 0;
+    animation: box 6s ease-in-out infinite;
+}
+
+/* Keyframes for Animation */
+@keyframes box {
+    0% { left: 100%; }
+    100% { left: 0px%; }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
