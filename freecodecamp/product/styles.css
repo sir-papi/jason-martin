@@ -82,6 +82,10 @@ header img {
     text-align: center;
 }
 
+#package {
+    color: #BC032B;
+}
+
 .assets {
     height: 250px;
     width: 250px;
