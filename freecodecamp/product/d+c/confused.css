@@ -54,3 +54,38 @@
     width: 250px;
     
 }  */
+
+#power {
+    padding: 2rem;
+    background-color: #fdfdfd;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.assets {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+#package {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.copy p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+.copy strong {
+    font-weight: bold;
+    display: inline; /* Keep it inline to avoid breaking layout */
+}
