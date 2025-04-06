@@ -4,15 +4,11 @@
 } 
 
 body {
-        background: 
-          linear-gradient(to right, purple 25%, goldenrod 75%),
-          url('texture.png');
-        background-blend-mode: overlay;
-
-      
+    background: linear-gradient(to right, purple 25%, goldenrod 75%);
     font-family: system-ui;
     text-align: center;
-}
+    margin: 0;
+    padding: 0;}
 
 #navbar {
     /* background-color: purple; */
@@ -62,14 +58,18 @@ h1 {
     margin-bottom: 0;
 }
 
-#projects {
-    background-color: #ccc;
-}
 p {
     font-size: 2em; 
     background-color: purple; 
     color: goldenrod; 
     margin: 0;
+    padding: 20px;
+}
+
+#projects {
+    background-color: #ccc;
+    width: 100vw;
+    margin-left: 0;
 }
 
 .project-tile {
@@ -83,11 +83,48 @@ p {
 #thumbnail {
     display: inline-block;
     margin: 20px;
-    max-width: 20%;
+    max-width: 40%;
     height: 100%;
     object-fit: cover;
+}
+
+#purple {
+    background-color: purple; 
+}
+
+#yellow {
+    background-color: goldenrod; 
+}
+
+#contact {
+    width: 100vw;
+    margin-left: 0;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 @media {
 
 }
+/* 
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b, #86A8E7, #91EAE4);
+    background-size: 800% 800%;
+    animation: gradientShift 15s ease infinite;
+  }
+  
+  
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+   */
