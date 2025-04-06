@@ -1,40 +1,37 @@
-/* * {
+* {
     border: 1px solid red;
     box-sizing; border-box;
-}  */
+} 
 
 body {
+    /* display: flex; */
     font-family: Futura, sans-serif;
     background-color: #000;
-    padding-top: 70px;
 }
 
-#header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #BC032B;
-    color: white;
+header {
     display: flex;
+    /* position: fixed; */
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    z-index: 1000;
-    box-sizing: border-box;
-  }
+    justify-content: space-between; 
+    /* width: 100%; */
+    background-color: #BC032B; /* #ce1141 */
+    color: white;
+}
 
 header img {
     height: 44px;
     width: 63px;
     margin: 10px;
-    
+    /* padding: 5px; */
 } 
 
  #levels {
     font-size: 1.5rem;
     font-weight: bold;
+
 } 
+
 
 .left-side {
     display: flex;
@@ -43,14 +40,14 @@ header img {
 
 #nav-bar {
     display: flex;
-    gap: 30px; 
+    gap: 30px; /* Adjust spacing between links */
     margin-right: 20px;
     font-size: 1.25rem;
 } 
 
 .nav-link {
     text-decoration: none;
-    color: white; 
+    color: white; /* Adjust color as needed */
     font-weight: bold;
 }
 
@@ -58,7 +55,6 @@ header img {
     color: black;
     background-color: white;
 }
-
 .like-mike {
     color: #BC032B;
     background-color: #fff;
@@ -70,9 +66,46 @@ header img {
     text-align: center;
     margin: 50px 0;
 }
+/* 
+#power {
+    display: flex;
+    color: #000;
+    background-color: #fff;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+
+}
+
+#power p {
+    display: flex;
+    width: 250px;
+    text-align: center;
+   
+}
+
+#package {
+    color: #BC032B;
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+.copy strong {
+    font-weight: bold;
+    display: inline;
+}
+
+.assets {
+    height: 250px;
+    width: 250px;
+    
+}  */
+
+
 
 #power {
     display: flex;
+    /* color: #fff;
+    background-color: #000; */
     justify-content: space-evenly;
     margin-bottom: 0px;
     color: #000;
@@ -85,6 +118,9 @@ header img {
     align-items: center;
     text-align: center;
     font-size: 1.1rem;
+
+    /* color: #000;
+    background-color: #fff; */
 }
 
 .assets {
@@ -93,11 +129,7 @@ header img {
     margin-top: 10px;
 }
 
-.asset-one { 
-    width: 325px; 
-    height: 250px; 
-    margin-top: 10px; 
-}   
+.asset-one { width: 325px; height: 250px; margin-top: 10px; }   
 
 button > a {
     text-decoration: none;
@@ -120,19 +152,26 @@ button > a:hover {
 .copy p {
     line-height: 1.5;
     margin: 0;
+    /* height: 250px; */
     width: 250px;
     margin-bottom: 20px;
 }
 
+/* strong {
+    font-weight: bold;
+    display: inline;
+} */
+
 .copy strong {
     font-weight: bold;
     color: #BC032B;
-    display: inline; 
+    display: inline; /* Keep it inline to avoid breaking layout */
 }
 
 button {
     background-color: #BC032B;
     color: #fff;
+    /* border: 2px solid #BC032B; */
     padding: 10px 20px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -155,23 +194,37 @@ button {
     margin: 0 0;
 }
 
+/* .email { 
+    height: 70%;
+    border: none;       
+    padding: 10px; 
+    font-size: 16px;
+    flex: 1;
+}  */
 
 #form {
     display: flex;
     justify-content: center;
+    /* margin: 0;
+    width: 100%;
+    background-color: transparent; */
 }
 
 #mailbox {
+    /* flex: 2; */
     display: flex;
+    /* align-items: center; */
     justify-content: space-between;
     margin: 20px;
     background-color: #fff;
     width: 500px;
     height: 50px;
     border-radius: 10px;
+    /* font-size: 1.5rem; */
+    /* gap: 10px; */
     padding: 0 10px;
-}
 
+}
 #email {
     border: none;
     padding: 10px;
@@ -195,10 +248,10 @@ button {
 }
 
 #email::placeholder {
-    font-size: 1.2rem; 
-    color: #BC032B; 
-    text-align: center; 
-}
+    font-size: 1.2rem; /* Make placeholder bigger */
+    color: #BC032B; /* Optional: soften the placeholder color */
+    text-align: center; /* Center the text */
+  }
 
 #footer {
     background-color: #000;
@@ -231,38 +284,3 @@ button {
     color: #BC032B;
 }
 
-@media (max-width: 500px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #nav-bar {
-        flex-direction: column;
-        gap: 10px;
-        margin-right: 0;
-    }
-
-    .assets {
-        width: 100%;
-        height: auto;
-    }
-
-    .asset-one {
-        width: 100%;
-        height: auto;
-    }
-
-    #mailbox {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    #email {
-        width: 100%;
-    }
-
-    #submit {
-        width: 100%;
-    }
-}
