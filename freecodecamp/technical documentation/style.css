@@ -1,0 +1,232 @@
+* {
+    /* margin: 0 auto;
+    padding: 20px;  */
+    box-sizing: border-box;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    /* font-size: 10px;  */
+    /* border: 1px solid #ff0011; */
+    /* border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    background: #9d6288; */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 10px; /* offset the main w/ body-colored border */
+}
+
+body {
+    background-color: #D2C3D0; /* #f0f0f0 #D2C3D0 */
+    /* color: #222; */
+    display: flex; /* i really need to learn the flexbox layout science */
+}
+
+.sidebar {
+    position: fixed; /* Fixes the sidebar to the side */
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100vh; /* 100% of viewport height */
+    background-color: #C3C8D2;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    padding-top: 40px;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    /* border-radius: 5px; */
+    transition: background-color 0.3s;
+    line-height: 1.9rem;
+    color: #222;
+    /* display: inline-block;
+    width: 100%; */
+}
+
+#navbar li {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+#navbar li:hover {
+    background: #D2C3D0;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+ul hr {
+    border: 3px solid #D2C3D0;
+    margin: 20px 0;
+}
+
+main {
+    margin-left: 400px; /* Prevent content from overlapping the sidebar */
+    padding: 40px;
+    background-color: #C3D2C5;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#nav-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+header {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #CC31CE;
+}
+
+
+p {
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #222;
+    /* border: 1px solid red; */
+}
+
+a {
+    text-decoration: underline;
+    color: #222;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+a:hover {
+    color: #CC31CE;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+hr {
+    border: 1px solid #222;
+    margin: 20px 0;
+}
+
+code {
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+
+    /* color: palevioletred; 
+    background-color: lightcyan;
+    padding: 5px;
+    border-radius: 5px; */
+}
+/* dhfkhewfhawlfhalwfhalwrihfalwihgflawhgalriwhgalighreliwa */
+
+
+
+/* body {
+    background-color: #f0f0f0;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;  
+} */
+
+.sidebar {
+    /* width: 200px; */
+    /* min-width: ; */
+    /* padding: 32px 0 0 18px; */
+    /* position: relative;
+    display: flex; */
+    /* border-right: var(--sidebar-left-border-width) solid var(--sidebar-left-border-color); */
+    /* height: 100%;
+    width: 200px; */
+    /* added */
+}
+
+/* #navbar {
+    height: 100%;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 40px 0 0 20px; 
+} */
+
+/* main {
+    margin-left: 220px;
+    padding: 40px;
+    align-content: center;
+    
+} */
+
+
+ /* * {
+    margin: 0 auto;
+    padding: 20px; 
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+    font-size: 20px; 
+    border: 1px solid #ff0011;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    background: #9d6288;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #ddd;
+    width: 60%;
+}
+
+.header {
+    background-color: #f9c4ac;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    background-color: #626f92;
+    width: 200px;
+    float: left;
+    padding: 20px;
+    height: 70vh;
+    align-content: center;
+}
+
+.content {
+    background-color: #474168;
+    margin-left: 220px;
+    padding: 20px;
+    height: 70vh;
+    align-content: center;
+}
+
+.footer {
+    background-color: #272637;
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    margin-top: 20px;
+} */ */
+
+/* html, body {
+    height: 100%;
+    margin: 0;
+} */
+
+
