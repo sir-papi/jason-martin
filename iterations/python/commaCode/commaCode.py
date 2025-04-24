@@ -6,11 +6,12 @@
 
 def written(words):
     if len(words) == 0:
-            print('error: list has no iterables')
+        print('error: list has no iterables')
     for i in range(len(words)):
         if i == len(words) - 1:
             words[-1] = 'and ' + words[-1]
-            written = print(', '.join(words))
+            words = ', '.join(words)
+            return(words)
                 
 balcony = ['plants', 'rug', 'bars', 'crates', 'ashtray']
 print(balcony)
